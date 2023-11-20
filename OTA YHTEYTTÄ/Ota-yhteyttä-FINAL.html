@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="../Style/reset.css">
+  <link rel="stylesheet" href="../Style/fontit-ja-värit.css">
+  <link rel="stylesheet" href="../Style/header-footer.css">
+  <link rel="stylesheet" href="../Varaaus/layout.css">
+  <link rel="stylesheet" href="./Ota-yhteyttä-FINAL.css">
+
+  <title>Palautetta Lomake</title>
+
+</head>
+
+<body>
+  <!-- ==================================Start Header========================= -->
+  <nav>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkBtn">
+      <span class="material-symbols-outlined">
+        menu
+      </span>
+    </label>
+    <ul class="title-nav">
+      <li> <a href="../mainpage.html">KOTI</a></li>
+      <li> <a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ </a> </li>
+      <li> <a href="../Varaaus/reservaition.html">VARAUSKALENTERI </a> </li>
+      <li> <a href="../IlmoitusTaulu  with storage/ilmoitustaulu.html">ILMOITUSTAULU </a> </li>
+      <li><a><img src="../Logos/HappyNest_logo.png" class="logo"></a></li>
+      <li> <a href="../Tiedotteet/Tiedotteet.html">TIEDOTTEET </a> </li>
+      <li> <a href="../TEHTAVALISTA/tehtavalista.html">TEHTÄVÄT</a> </li>
+      <li> <a href="../Brändi/HappyNest-Brändi.html"> MEISTÄ</a> </li>
+
+      <li> <a href="/OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
+      <li> <a id="logoutButton" href="">Logout
+        </a></li>
+
+    </ul>
+  </nav>
+  <!-- ==================================Finish Header========================= -->
+
+
+
+  <div class="Wrapper">
+    <section class="vikailmoitus-box">
+      <div class="vikailmoitus-inner-box">
+        <h3 class="vikailmoitus"><a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html" class="linkki-huolto">Jos asiasi
+            koskee
+            vikailmoitusta ja haluat tehdä huoltopyynnön, ota yhteyttä huoltoon tästä.</a></h3>
+      </div>
+    </section>
+
+    <h1 class="otsikko">Ota yhteyttä isännöitsijään</h1>
+    <form>
+      <section class="tiedot">
+
+        <div>
+          <label class="asia-koskee" for="tyyppi">Asia koskee*:</label>
+          <select name="tyyppi" id="tyyppi" oninvalid="this.setCustomValidity('Valitse, mitä asia koskee.')"
+            oninput="setCustomValidity('')">
+            <option value="Valitse-aihe">Valitse aihe</option>
+            <option value="Palaute">Palaute</option>
+            <option value="Tiedustelu">Tiedustelu</option>
+            <option value="irtisanominen">Vuokrasopimuksen irtisanominen</option>
+            <option value="Muu">Muut</option>
+          </select>
+        </div>
+        <div>
+          <label for="name">Etunimi*</label>
+          <input type="text" class="kenttä" name="user_name" id="name" required
+            oninvalid="this.setCustomValidity('Täytä puuttuvat tiedot')" oninput="setCustomValidity('')">
+        </div>
+        <div>
+          <label for="phone">Sukunimi*</label>
+          <input type="number" class="kenttä" name="user_number" id="phone" required
+            oninvalid="this.setCustomValidity('Täytä puuttuvat tiedot')" oninput="setCustomValidity('')">
+        </div>
+        <div>
+          <label for="email">Osoite*</label>
+          <input type="email" class="kenttä" name="user_email" id="email" required
+            oninvalid="this.setCustomValidity('Täytä puuttuvat tiedot')" oninput="setCustomValidity('')">
+        </div>
+        <div>
+          <label for="address">Puhelin*</label>
+          <input type="text" class="kenttä" id="address" required
+            oninvalid="this.setCustomValidity('Täytä puuttuvat tiedot')" oninput="setCustomValidity('')">
+        </div>
+        <div>
+          <label for="address">Sähköposti*</label>
+          <input type="text" class="kenttä" id="address" required
+            oninvalid="this.setCustomValidity('Täytä puuttuvat tiedot')" oninput="setCustomValidity('')">
+        </div>
+        <div class="irtisanomispäivä">
+          <label class="ehto" for="date">Jos asiasi koskee vuokrasopimuksen irtisanomista, valitse
+            irtisanomispäivä.</label>
+          <!-- <br>
+        <br> -->
+          <input type="date" class="kenttä" name="date" id="date" placeholder="PP-KK-VVVV" pattern="\d{2}-\d{2}\d{4}-">
+        </div>
+        <!-- </section>
+      <section> -->
+        <div class="viesti">
+          <label for="message">Viesti:</label>
+          <textarea id="Viesti" cols="33" rows="8" required maxlength="5000" placeholder="Enintään 5000 merkkiä"
+            oninvalid="this.setCustomValidity('Täytä puuttuvat tiedot')" oninput="setCustomValidity('')"></textarea>
+          </textarea>
+        </div>
+      </section>
+
+      <div class="buttonDiv">
+        <button class="button" type="reset">Tyhjennä</button>
+        <button class="button" type="submit">Lähetä</button>
+      </div>
+    </form>
+    <section class="yhteystiedot">
+      <p>Isännöitsijätoimisto Viisiapila,</p>
+      <p>PL 123</p>
+      <p>Löydät meidät sosiaalisesta mediasta.</p>
+      <a href=""><img class="ikoni" src="../icons/facebook.svg" alt="">
+        Isännöitsijätoimisto Viisiapila</a>
+      <a href=""><img class="ikoni" src="../icons/instagram.svg" alt=""> @viisiapila</a>
+      <p>Puhelimitse palvelemme arkisin klo 9-15</p>
+      <p class="viimeinen-kappale"><img class="ikoni" src="../icons/phone-solid.svg" alt="">+358 2 123 4567</p>
+    </section>
+
+    <!-- ===============================start Footer=============================== -->
+    <div class="section-footer">
+      <div class="row for-queri-footer">
+        <div class="col-md-5 color">
+          <div class="row">
+            <ul class="title-footer">
+              <li><a href="../mainpage.html">KOTI</a></li>
+              <li><a href="../Tiedotteet/Tiedotteet.html">TIEDOTTEET</a></li>
+              <li><a href="../TEHTÄVÄLISTA/tehtävälista.html">TEHTÄVÄT</a></li>
+              <li><a href="../YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html">ILMOITUSTAULU</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 my-sm-5 text-center img-section-footer">
+          <a href="./mainpage.html"><img class="img-footer" src="../Logos/HappyNest_logo.png" alt=""></a>
+        </div>
+        <div class="col-md-5 color creat-margin-right">
+          <div class="row">
+            <ul class="title-footer">
+              <li><a href="../Brändi/HappyNest-Brändi.html">MEISTÄ</a></li>
+              <li><a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ</a></li>
+              <li><a href="../Varaaus/reservaition.html">VARAUKSET</a></li>
+              <li><a href="../OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===============================start Footer=============================== -->
+
+
+
+
+
+
+
+
+</body>
+
+</html>

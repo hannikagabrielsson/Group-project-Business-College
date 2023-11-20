@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+    <link rel="stylesheet" href="../Style/reset.css">
+    <link rel="stylesheet" href="../Style/fontit-ja-värit.css">
+    <link rel="stylesheet" href="../Style/header-footer.css">
+    <link rel="stylesheet" href="../Varaaus/layout.css">
+    <link rel="stylesheet" href="./Tiedotteet.css">
+    <title>Tiedotteet</title>
+
+</head>
+
+<body>
+    <!-- ==================================Start Header========================= -->
+    <nav>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </label>
+        <ul class="title-nav">
+            <li> <a href="../mainpage.html">KOTI</a></li>
+            <li> <a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ </a> </li>
+            <li> <a href="../Varaaus/reservaition.html">VARAUSKALENTERI </a> </li>
+            <li> <a href="../IlmoitusTaulu  with storage/ilmoitustaulu.html">ILMOITUSTAULU </a> </li>
+            <li><a href="../mainpage.html"><img src="../Logos/HappyNest_logo.png" class="logo"></a></li>
+            <li> <a href="/Tiedotteet/Tiedotteet.html">TIEDOTTEET </a> </li>
+            <li> <a href="../TEHTAVALISTA/tehtavalista.html">TEHTÄVÄT</a> </li>
+            <li> <a href="../Brändi/HappyNest-Brändi.html"> MEISTÄ</a> </li>
+
+            <li> <a href="../OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO </a> </li>
+            <li> <a id="logoutButton" href="">Logout
+                </a></li>
+
+        </ul>
+    </nav>
+    <!-- ==================================Finish Header========================= -->
+
+
+
+    <!-- <main>  -->
+    <main>
+        <section class="sec-one">
+            <h1>TALOYHTIÖ TIEDOTTAA</h1>
+            <h3>Lukemattomia tiedotteita</h3>
+            <div class="holder">
+                <div id="notif" class="notification-num">5</div>
+            </div>
+            <button class="button" onclick="ReadAll()">MERKITSE KAIKKI LUETUKSI</button>
+            <br>
+        </section>
+        <section class="box">
+            <Section class="tiedote-box">
+                <div class="circle"></div>
+                <div class="info">
+                    <p class="nimi">ISÄNNOITSIJÄ TIEDOTTAA</p>
+                    <p class="date">6.10.23</p>
+                    <p class="aihe">Asunnoissa tehdään suihkukaappien ovien uusiminen aikavälillä 13.11. - 2.12.2023</p>
+                    <p class="para">Valmistusvirheen vuoksi taloyhtiö on päättänyt uusia kaikkien suihkukaappien ovet.
+                        Työ kestää yhen päivän per asunto. Asukkaan ei tarvitse olla paikalla.Työntekijät käyttävät omia
+                        avaimiaan päästäkseen asuntoon...</p>
+                    <a href="">Lue lisää</a>
+                </div>
+                <div class="tick-box" onclick="toggleTick(this)"></div>
+            </Section>
+
+            <Section class="tiedote-box">
+                <div class="circle"></div>
+                <div class="info">
+                    <p class="nimi">ISÄNNOITSIJÄ TIEDOTTAA</p>
+                    <p class="date">01.11.23</p>
+                    <p class="aihe">Lämmityspatterin nuppien vaihto suunniteltu 15-18.11.2023 asunnoissa.</p>
+                    <p class="para">Lähipäivinä, 15.11.-18.11.2023, lämmityspatterin nupit vaihdetaan
+                        lämmitysjärjestelmän tehokkuuden ja toimivuuden parantamiseksi. Huoltotöiden aikana
+                        lämmitysjärjestelmässäsi voi esiintyä tilapäisiä häiriöitä...</p>
+                    <a href="">Lue lisää</a>
+                </div>
+                <div class="tick-box" onclick="toggleTick(this)"></div>
+            </Section>
+
+            <Section class="tiedote-box">
+                <div class="circle"></div>
+                <div class="info">
+                    <p class="nimi">ISÄNNOITSIJÄ TIEDOTTAA</p>
+                    <p class="date">25.12.23</p>
+                    <p class="aihe">Jännittävä lastentapahtuma yhteisössämme 01.01.2024</p>
+                    <p class="para">Meillä on ilo aloittaa uusi vuosi upealla tapahtumalla, joka on suunniteltu
+                        erityisesti nuorille asukkaillemme! Valmistaudu ikimuistoiseen ja hauskaan päivään tulevassa
+                        Kids' Eventissämme, joka järjestetään tänä tammikuussa yhteisöhuoneessa....</p>
+                    <a href="">Lue lisää</a>
+                </div>
+                <div class="tick-box" onclick="toggleTick(this)"></div>
+            </Section>
+
+            <Section class="tiedote-box">
+                <div class="circle"></div>
+                <div class="info">
+                    <p class="nimi">ISÄNNOITSIJÄ TIEDOTTAA</p>
+                    <p class="date">25.11.23</p>
+                    <p class="aihe">Yleiset tilat maalataan 1.12. välisenä aikana. – 5.12.2023</p>
+                    <p class="para">1.12.-5.12. välissä maalataan rakennuksemme yleiset tilat, kuten käytävät, käytävät
+                        ja yleiset tilat. Tänä aikana pyydämme kaikkia asukkaita, joilla on polkupyöriä pysäköitynä
+                        julkisiin tiloihin, järjestämään tilapäisvarastoinnin muualle. Näin maalarit pääsevät
+                        esteettömästi työskentelemään tehokkaasti ja turvallisesti....</p>
+                    <a href="">Lue lisää</a>
+                </div>
+                <div class="tick-box" onclick="toggleTick(this)"></div>
+            </Section>
+
+            <Section class="tiedote-box">
+                <div class="circle"></div>
+                <div class="info">
+                    <p class="nimi">ISÄNNOITSIJÄ TIEDOTTAA</p>
+                    <p class="date">6.10.23</p>
+                    <p class="aihe">Asunnoissa tehdään suihkukaappien ovien uusiminen aikavälillä 13.11. - 2.12.2023</p>
+                    <p class="para">Valmistusvirheen vuoksi taloyhtiö on päättänyt uusia kaikkien suihkukaappien ovet.
+                        Työ kestää yhen päivän per asunto. Asukkaan ei tarvitse olla paikalla.Työntekijät käyttävät omia
+                        avaimiaan päästäkseen asuntoon...</p>
+                    <a href="">Lue lisää</a>
+                </div>
+                <div class="tick-box" onclick="toggleTick(this)"></div>
+            </Section>
+
+
+
+            <div class="lisää"><a href="">LATAA LISÄÄ TIEDOTTEITA</a></div>
+        </section>
+    </main>
+
+    <!-- </main> -->
+    <!-- ===============================start Footer=============================== -->
+    <div class="section-footer">
+        <div class="row for-queri-footer">
+            <div class="col-md-5 color">
+                <div class="row">
+                    <ul class="title-footer">
+                        <li><a href="../mainpage.html">KOTI</a></li>
+                        <li><a href="../Tiedotteet/Tiedotteet.html">TIEDOTTEET</a></li>
+                        <li><a href="../TEHTÄVÄLISTA/tehtävälista.html">TEHTÄVÄT</a></li>
+                        <li><a href="../YHTEISÖN ILMOITUSTAULU copy/ilmoitustaulu.html">ILMOITUSTAULU</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 my-sm-5 text-center img-section-footer">
+                <a href="./mainpage.html"><img class="img-footer" src="../Logos/HappyNest_logo.png" alt=""></a>
+            </div>
+            <div class="col-md-5 color creat-margin-right">
+                <div class="row">
+                    <ul class="title-footer">
+                        <li><a href="../Brändi/HappyNest-Brändi.html">MEISTÄ</a></li>
+                        <li><a href="../HUOLTOPYYNTÖ/Huoltopyynto-FINAL.html">HUOLTOPYYNTÖ</a></li>
+                        <li><a href="../Varaaus/reservaition.html">VARAUKSET</a></li>
+                        <li><a href="../OTA YHTEYTTÄ/Ota-yhteyttä-FINAL.html">YHTEYDENOTTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============================start Footer=============================== -->
+
+
+
+
+
+
+
+
+    <script>
+        let notificationNum = document.getElementById("notif");
+
+
+
+        function toggleTick(element) {
+            let circle = element.parentElement.querySelector(".circle");
+            if (element.textContent === "✔") {
+                element.textContent = "";
+                notificationNum.textContent = (parseInt(notificationNum.textContent) + 1).toString();
+                circle.style.backgroundColor = "#B861D2";
+            }
+            else {
+                element.textContent = "✔"
+                notificationNum.textContent = (parseInt(notificationNum.textContent) - 1).toString();
+                circle.style.backgroundColor = "#DC7848";
+
+            }
+        }
+
+        function ReadAll() {
+            notificationNum.textContent = 0;
+            var circles = document.querySelectorAll(".circle");
+            circles.forEach(function (circle) {
+                circle.style.backgroundColor = "#DC7848";
+            })
+            var elements = document.querySelectorAll(".tick-box");
+            elements.forEach(function (element) {
+                element.textContent = "✔"
+            }
+            )
+        }
+    </script>
+</body>
+
+</html>

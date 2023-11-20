@@ -1,0 +1,75 @@
+
+  
+  ul li {
+    cursor: pointer;
+  }
+  
+  
+  /* Navbar Styel */
+  .navbar-box {
+    text-align: center;
+    display: flex;
+  }
+  
+  .menu-left{
+    justify-content: left;
+  }
+  .menu-right{
+    justify-content: right;
+  }
+  
+  .logo {
+    width: 350px;
+    /* object-fit: cover; */
+    align-items: center;
+    padding-right: 5rem;
+  }
+  .box-nav{
+    padding: 0;
+  }
+  .navbar{
+    background-color: var(--yellow);
+    height: 11rem;
+    /* display: flex; lisätty */
+  }
+  
+  .navbar-nav li {
+    margin: 0 1rem;
+  }
+  
+
+
+  /*  start footer */
+
+.section-footer {
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+  background-color: var(--yellow);
+  margin-block-end: -1rem;
+}
+
+.img-footer {
+  width: 270px;
+  height: 100px;
+}
+
+.title-footer {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-footer li {
+  font-size: 1rem;
+  margin: 0 15px;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

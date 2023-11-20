@@ -1,0 +1,375 @@
+
+  
+  p, label {
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .linkki-huolto {
+    color: var(--black);
+    text-decoration: underline;
+  } 
+
+  /* Fontit loppuu */
+  
+  body {
+    font-size: 56.2%;
+    background-color: var(--beige);
+    font-family: "Poppins";
+    color: var(--black);
+    }
+
+      /* .vikailmoitus-box {
+      /* .vikailmoitus-box {
+        display: flex;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        
+      } */
+      .vikailmoitus-inner-box {
+        width: 100%;
+        background-color: var(--orange);
+        padding: 1rem;
+        margin-bottom: 5rem;
+      }
+
+    .vikailmoitus {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .otsikko {
+        text-align: center;
+        margin-block-end: 5rem;
+    }
+
+      form {
+         display: flex;
+         flex-direction: column; 
+         justify-content:right;
+         align-items: center;
+      } 
+
+     
+.tiedot {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    /* justify-content: center; */
+    margin-right: 8rem;
+}
+
+      .tiedot > * {
+        padding-block-end: 1rem;
+        display: flex;
+        flex-direction: row;
+        /* width: 39rem; */
+        justify-content: right;
+        align-items: flex-end;
+      }
+      
+      label {
+        padding: 2px 1rem;
+        margin-bottom: 0;
+      }
+      .asia-koskee {
+        text-align: right;
+      }
+   
+
+      #tyyppi {
+        width:  30rem;
+         height: 2rem;
+          border-radius: 5px;
+          border: solid;
+          border-width: 1px;
+          font-size: 16px;
+          padding: 0.2rem 1rem;
+          border: none;
+          box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
+          font-family: 'Poppins';
+      }
+      
+     input{
+          width:  30rem;
+         height: 2rem;
+          border-radius: 5px;
+          border: solid;
+          border-width: 1px;
+          font-size: 1rem;
+          padding: 0.2rem 1rem;
+          border: none;
+          box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
+          font-family: 'Poppins';
+      }
+
+      input.active, input:active {
+        outline: 0;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+      }
+      
+      
+      input.focus, input:focus {
+        outline: 0;
+        border: none;
+      }
+      
+      textarea.active, textarea:active {
+        outline: 0;
+        border: none;
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+      }
+      
+      textarea.focus, textarea:focus {
+        outline: 0;
+        border: none;
+      }
+
+      .irtisanomispäivä {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 0;
+        flex-grow: 1;
+        margin-block-end: 0.3rem;
+        /* width: 46rem; */
+      }
+
+      .ehto {
+        padding: 0.5rem 0 1.5rem;
+      }
+
+      .viesti {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-basis: 0;
+        flex-grow: 1;
+        padding-block-end: 1rem;
+        align-items: flex-start;
+      }
+
+      textarea{
+          font-size: 16px;
+          border: none;
+          box-shadow: 3px 0px 15px 0.5px rgba(99, 99, 101, 0.6);
+          border-radius: 5px;
+          width: 30rem;
+          font-family: 'Poppins';
+          padding: 0.5rem 1rem;
+      }
+
+      .button {
+        margin: 0 0.5rem;
+    }
+
+     .buttonDiv {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: center;
+    /* width: 27rem; */
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+      .yhteystiedot {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 0;
+        flex-grow: 1;
+        width: 100%;
+        /* width: 30.5rem; */
+        /* padding-block-start: 3rem; */
+        align-items: right;
+        /* margin: 0 30rem; */
+        padding-top: 6rem;
+  
+      }
+
+      .yhteystiedot > * {
+        text-align: center;
+      }
+
+      .viimeinen-kappale {
+        padding-bottom: 5rem;
+      }
+
+      .ikoni {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      a {
+        font-size: 16px;
+        font-family: Poppins;
+        line-height: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--black);
+        margin-bottom: 1rem;
+      }
+
+      /* TABLET */
+
+@media only screen and (max-width: 769px) {
+   .vikailmoitus {
+    margin: 0.5rem 0 0.5rem 8.5rem;
+    width: 30rem;
+   }
+
+
+
+  .otsikko {
+    font-size: 25px;
+    margin-left: 6rem;
+  }
+
+  .buttonDiv {
+    justify-content: right;
+    margin-right: 20rem;
+  }
+
+  .yhteystiedot {
+    margin-left: 3rem;
+  }
+
+  
+    .linkki-huolto {
+      color: var(--black);
+      width: 30rem;
+    }
+    
+
+  .tiedot {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 2rem;
+}
+
+    .kenttä {
+      width:  30rem;
+        font-size: 0.8rem;
+    }
+
+  .section-2 a{
+    font-size: 20px;
+  }
+
+  .button-container {
+  margin-left: 10.5rem;
+  padding-top: 0;
+}
+}
+
+       /* MOBILE */
+
+ @media only screen and (max-width: 427px) {
+  
+  H1 {
+    margin: 0 0 2rem;
+  }
+  
+  .vikailmoitus {
+    margin: 0.5rem 0 0.5rem 0;
+    width: 20rem;
+   }
+
+  .vikailmoitus-inner-box {
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+  }
+  
+    .otsikko {
+      font-size: 25px;
+      margin: 3rem 0 2rem 0;
+    }
+  
+    .kehote {
+      margin-bottom: 1rem;
+    }
+    
+      .linkki-huolto {
+        color: var(--black);
+      }
+  
+  form {
+    justify-content:center;
+    align-items: center;
+  } 
+  .kenttä {
+    width:  22rem;
+    height: 1.9rem;
+      font-size: 0.8rem;
+      /* margin-top: 0.2rem; */
+  }
+  .tiedot > * {
+    /* padding-block-end: 1rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0.3rem;
+  }
+    .tiedot {
+      flex-direction: column;
+      margin-right: 0;
+  }
+  .syöte {
+    padding-bottom: 0;
+  }
+  
+  #tyyppi {
+    width: 22rem;
+  }
+  
+  textarea {
+    width: 22rem;
+  }
+  /* .file {
+    width: 15rem;
+  
+  } */
+  
+  .ehto {
+    width: 22rem;
+  }
+  label {
+    padding: 10px 1rem;
+    margin-bottom: 0;
+  }
+     
+        #taloyhtio {
+          width:  22rem;
+           height: 1.5rem;
+            font-size: 14px;
+        }
+  
+    
+      .buttonDiv {
+        margin-block-end: 1rem;
+        margin-right: 5.5rem;
+      }
+  
+      .button {
+        margin: 0 0.5rem;
+          margin-top: 0;
+      }
+
+      .yhteystiedot {
+        margin-left: 0;
+      }
+  
+  }

@@ -1,0 +1,285 @@
+:root {
+    --blue: #277bc0;
+    --yellow: #f4b63f;
+    --orange: #dc7848;
+    --beige: #fdf5d3;
+    --blue-box-1: #a7e7f6;
+    --black: #212121;
+    --purple: #ad5fc9;
+  }
+
+  .Wrapper {
+    width: 100%;
+    background-color: var(--beige);
+    overflow-x: hidden;
+  }
+  
+  body{
+    text-align: center;
+  }
+
+  .visio {
+    padding: 0 10rem;
+  }
+  .main-heading {
+    /* margin: 16rem 0 4rem; */
+    margin-block-end: 4rem;
+  }
+
+  .slogan {
+    margin: 6rem 0 4rem;
+    margin: 6rem 0 4rem;
+    /* margin-block-end: 4rem; */
+    font-size: 28px;
+  }
+  H3 {
+    margin: 0 0 4rem;
+  }
+  
+  .visio-p {
+    margin: 0 0 5rem;
+  }
+
+  .arvo-container {
+    padding: 4rem 0;
+    background-color: #f4b63f;
+    margin-block-end: 5rem;
+    height: 25rem;
+  }
+
+  .arvo-container h1 {
+   padding: 1.5rem 0;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  .arvot {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    width: 88%;
+    margin: auto;
+    padding-top: 3.5rem;
+  }
+
+  .arvot-container {
+    background-color: var(--orange);
+    border-radius: 5px;
+    border: none;
+    width: 15rem;
+    margin:0.5rem;
+    padding: 1rem;
+  }
+
+  .arvo {
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 20px;
+  }
+
+  .arvo-3 {
+    width: 18rem;
+  }
+
+  .heading-creators {
+    margin-block-end: 3rem;
+  }
+  .creators-section {
+    width: 100%;
+    margin-block-end: 5rem;
+  }
+  .creators {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem 0 1rem 1.8rem;
+    margin: 0 3rem;
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .creators > * {
+    justify-content: center;
+  }
+
+  .person {
+    width: 18rem;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--blue);
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  figure {
+    margin: 0;
+  }
+  .headshot {
+    border-radius: 50%;
+    width: 16rem;
+    padding: 1.5rem 0.5rem;
+  }
+  .description {
+    margin: 2rem 0;
+  }
+  .name {
+    font-size: 22px;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 2px;
+  }
+
+  .icon2 {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  a{
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 769px){
+
+    body {
+      max-width: 769px;
+    }
+    .visio{
+      padding: 0;
+      max-width: 100%;
+    }
+    .slogan {
+      margin: 2rem 0;
+     max-width: 100%;
+      font-size: 24px;
+    }
+    .main-heading {
+      font-size: 25px;
+    text-align: center;
+      margin: 2rem 0;
+      max-width: 100%;
+    }
+    H3 {
+      margin: 0 0 2rem;
+      max-width: 100%;
+    }
+
+    .visio-p {
+      margin: 0 0 2rem;
+      padding: 0 5rem;
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+    }
+
+    .arvot-heading,
+    .heading-creators {
+      font-size: 25px;
+    }
+
+    .heading-creators {
+      margin: 2rem 0 2rem;
+    }
+
+    .arvo-container {
+      padding: 0;
+      height: 18rem;
+      margin-bottom: 2rem;
+    }
+    .arvo-container h1 {
+      padding-top: 2.5rem;
+    }
+
+    .arvot-container {
+      width: 10rem;
+    }
+    .arvo {
+      font-size: 16px;
+    }
+    .arvot {
+      padding-top: 0;
+      margin: 0 5rem;
+    }
+
+    .arvo-3 {
+      width: 15rem;
+    }
+    .creators-section {
+      margin-block-end: 2rem;
+      max-width: 100%;
+    }
+  
+    .creators {
+      margin: 0;
+      padding: 1rem 0;
+    }
+    .person {
+      width: 10rem;
+      margin: 0 0.2rem;
+    }
+    .headshot {
+      width: 9rem;
+      margin: 1rem 0.5rem 0;
+      padding: 0;
+    }
+
+    .name {
+      font-size: 18px;
+      margin: 0 0 0.5rem;
+      padding: 0;
+      text-align: center;
+
+    }
+    .description {
+      margin: 1rem;
+    }
+    .icon2 {
+      width: 2rem;
+      height: 2rem;
+    }
+    .icon-text {
+      font-size: 14px;
+    }
+
+  }
+
+  @media only screen and (max-width: 426px) {
+
+    .slogan {
+      max-resolution: 2rem 0 0;
+    }
+    .arvo-container h1 {
+      padding: 2.5rem 2.5rem 1rem;
+    }
+
+    .arvo-container {
+      height: 32rem;
+      width: 426px;
+    }
+    .arvot-container {
+      width: 20rem;
+      padding: 0.5rem 2rem;
+      margin: 1rem;
+    }
+
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .person {
+      margin-bottom: 0.5rem;
+      flex-direction: column;
+    }
+  }

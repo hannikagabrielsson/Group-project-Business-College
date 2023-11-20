@@ -1,0 +1,510 @@
+@import url(MQ-Mobile.css);
+@import url(MQ-Tablet.css);
+@import url(fontit-ja-värit.css);
+@import url(header-footer.css);
+@import url(reservaitio.css);
+
+:root {
+  --blue: #277bc0;
+  --yellow: #f4b63f;
+  --orange: #dc7848;
+  --beige: #fdf5d3;
+  --blue-box-1: #a7e7f6;
+  --black: #212121;
+  --purple: #ad5fc9;
+  --pink: #E86594;
+}
+
+.Wrapper {
+  width: 100%;
+  background-color: var(--beige);
+  overflow-x: hidden;
+}
+
+.slog-part {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  /* padding-block-start: 11rem; */
+  /* padding-block-end: 3rem; */
+  padding: 1rem;
+  height: 8rem;
+}
+
+.slogan {
+  padding-bottom: 2rem;
+}
+
+
+
+.slog-part h1 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.section-2 {
+  margin: 1rem 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+.box-section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+  box-shadow: 0 3px 7px 3px rgb(131, 130, 130);
+}
+
+/* .box-section-2 img:hover{
+  opacity: 0.30;
+} */
+.box-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+  box-shadow: 0 3px 7px 3px rgb(131, 130, 130);
+}
+
+.box-image {
+  height: 400px;
+  /* background-image: url(./images/Screenshot\ 2023-09-15\ at\ 20.15.40.png); */
+  /* background-image: url(../images/Screenshot\ 2023-09-15\ at\ 20.03.52.png); */
+  background-size: 300px;
+  color: var(--black);
+  /* border: var(--orange) solid 5px; */
+  border-radius: 10px;
+}
+
+/* .image-community {
+  background-image: url(../images/Screenshot\ 2023-09-15\ at\ 20.03.52.png);
+} */
+.background {
+  height: 400px;
+  background-size: 300px;
+  position: absolute;
+  /* display: inline-block; */
+  /* object-fit: fill; */
+  text-transform: uppercase;
+}
+
+
+.image {
+  object-fit: cover;
+  height: 400px;
+  background-size: 300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* .image:hover {
+  visibility: hidden;
+} */
+
+
+.teksti:hover {
+  visibility: hidden;
+  text-transform: uppercase;
+}
+
+.teksti.focus .teksti:focus {
+  visibility: hidden;
+  text-transform: uppercase;
+}
+
+
+
+.teksti {
+  /* display: visible; */
+  font-size: 26px;
+  text-transform: uppercase;
+  /* padding-top: 5rem; */
+  position: relative;
+
+
+}
+
+/* .imageWrapper:hover p {
+
+  font-size: 26px;
+  text-transform: uppercase;
+ 
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--black);
+  font-family: poppins;
+  font-weight:100;
+} */
+
+/* .image:hover {display:none;} */
+
+.blue:hover {
+  background-color: var(--blue-box-1);
+  box-shadow: 3px 6px 5px gainsboro;
+}
+
+a:hover {
+  color: var(--purple);
+}
+
+.blue {
+  background-color: var(--orange);
+  border-radius: 10px;
+  /* height: 100% ; lisätty */
+}
+
+.section-2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+
+  /* margin: 3rem 0px; */
+  margin: 4rem 0 2.8rem 0rem;
+}
+
+.pic-section2 {
+  width: 100%
+}
+
+
+
+.box-section-2 p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 2rem;
+  height: 400px;
+  width: 300px;
+}
+
+.section-3 {
+  width: 100%;
+  height: 380px;
+  margin: 3rem 0;
+  background-color: var(--yellow);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-3 h1 {
+  padding-bottom: 2rem;
+}
+
+.section-3 h3 {
+  padding-bottom: 0.5rem;
+}
+
+.five {
+  font-size: 25px;
+  font-weight: 800;
+  padding: 0.6rem 0.9rem;
+  object-fit: cover;
+  text-align: center;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  background-color: var(--purple);
+  margin: 1rem 0 2rem;
+}
+
+.linkki:hover {
+  text-decoration: none;
+}
+
+.sec4-ilmoitus {
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.section-4-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 0;
+  flex-grow: 1;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.section-4 {
+  /* width: 60%; */
+  width: 25rem;
+  height: 25rem;
+  /* background-color: var(--blue-box); */
+  /* margin: auto; */
+  padding-block-start: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin-block-end: 5rem;
+  box-sizing: border-box;
+  padding: 20px;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  resize: auto;
+}
+
+.section-4-pink {
+  background-color: var(--blue);
+  width: 15rem;
+  height: 15rem;
+}
+
+.section-4-blue {
+  background-color: var(--orange);
+  width: 25rem;
+  height: 25rem;
+}
+
+.slogan-section-4 {
+  text-align: center;
+}
+
+.section-4 h2 {
+  padding-bottom: 2rem;
+}
+
+.section-4 h1 {
+  padding: 0 0 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.section-4 .Tähän-Käyttäjä,
+.section-4 .tähän-lyhyt {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 3rem 1rem;
+
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Poppins';
+}
+
+.linkki-muisti {
+  text-align: center;
+}
+
+.Tähän-Käyttäjä {
+  /* font-size: 1.3rem; */
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.linkki-ilmoitus {
+  margin: 0 auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+  width: 300px;
+  display: flex;
+}
+
+.section-6 {
+
+  padding: 2rem;
+}
+
+
+
+.section-5 {
+  width: 100%;
+  padding: 3rem;
+  margin: 3rem auto;
+}
+
+.container-grid {
+  padding: 0 4rem;
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px 20px;
+  grid-template-areas:
+    "area-01 area-04 area-07"
+    "area-01 area-04 area-07"
+    "area-01 area-05 area-07"
+    "area-02 area-05 area-08"
+    "area-02 area-06 area-08"
+    "area-03 area-06 area-08";
+}
+
+.area-04 {
+  grid-area: area-04;
+  background-color: var(--orange);
+}
+
+.area-05 {
+  grid-area: area-05;
+  background-color: var(--blue-box);
+}
+
+.area-06 {
+  grid-area: area-06;
+  background-color: var(--orange);
+}
+
+.area-07 {
+  grid-area: area-07;
+  background-color: var(--blue-box-1);
+}
+
+.area-08 {
+  grid-area: area-08;
+  background-color: var(--orange);
+}
+
+.area-03 {
+  grid-area: area-03;
+  background-color: var(--blue-box-1);
+}
+
+.area-02 {
+  grid-area: area-02;
+  background-color: var(--blue-box-1);
+}
+
+.area-01 {
+  grid-area: area-01;
+  background-color: var(--blue-box);
+}
+
+.text-center p {
+  font-size: 20px;
+}
+
+.section-footer {
+  padding: 1rem;
+}
+
+.linkki-ylös {
+  margin-top: 2rem;
+  margin-block-end: 5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .section-4-pink {
+    display: none;
+  }
+
+  .slog-part h1 {
+    font-size: 25px;
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+      "area-01 area-02"
+      "area-03 area-04"
+      "area-05 area-06"
+      "area-07 area-08";
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .section-footer {
+    padding: 0 4rem;
+  }
+
+  .img-footer {
+    align-self: -1;
+  }
+
+  .section-footer {
+    padding: 0 4rem;
+  }
+
+  .img-footer {
+    align-self: -1;
+  }
+
+
+  .slog-part h1 {
+    font-size: 25px;
+  }
+
+  .slogan {
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+      "area-01 area-02"
+      "area-03 area-04"
+      "area-05 area-06"
+      "area-07 area-08";
+  }
+
+  .img-footer {
+    width: 120px;
+    height: auto;
+  }
+
+  .section-2 a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+      "area-01"
+      "area-02"
+      "area-03"
+      "area-04"
+      "area-05"
+      "area-06"
+      "area-07"
+      "area-08";
+  }
+
+
+  .slogan {
+    font-size: 20px;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .section-3 h1 {
+    font-size: 18px;
+  }
+
+  .linkki-iso {
+    padding: 2rem;
+    font-size: 18px;
+  }
+
+
+}
